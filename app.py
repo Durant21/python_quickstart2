@@ -28,30 +28,46 @@ def get_latest_packages():
     ]
 
 
-@app.route('/')
-@response(template_file='home/index.html')
-def index():
-    test_packages = get_latest_packages()
-    return {'packages': test_packages}
-    # return flask.render_template('home/index.html', packages=test_packages)
+# @app.route('/')
+# @response(template_file='home/index.html')
+# def index():
+#     test_packages = get_latest_packages()
+#     return {'packages': test_packages}
+#     # return flask.render_template('home/index.html', packages=test_packages)
 
 
-@app.route('/about')
-@response(template_file='home/about.html')
-def about():
-    return {}
+# @app.route('/about')
+# @response(template_file='home/about.html')
+# def about():
+#     return {}
 
 
-@app.route('/map')
-@response(template_file='GIS/map.html')
-def map():
-    return {}
+# @app.route('/map')
+# @response(template_file='GIS/map.html')
+# def map():
+#     return {}
 
 
-@app.route('/api/documents', methods=['GET'])
-def get_all():
-    return jsonify({'tasks': tasks})
+# @app.route('/api/documents', methods=['GET'])
+# def get_all():
+#     return jsonify({'tasks': tasks})
 
+
+def register_blueprints():
+    from views import document_views
+    from views import home_views
+    from views import gis_views
+    # from pypi_org.views import package_views
+    # from pypi_org.views import cms_views
+
+    # app.register_blueprint(package_views.blueprint)
+    app.register_blueprint(document_views.blueprint)
+    app.register_blueprint(home_views.blueprint)
+    app.register_blueprint(gis_views.blueprint)
+    # app.register_blueprint(cms_views.blueprint)
+
+
+register_blueprints()
 
 # @app.route('/')
 # def hello_world():
