@@ -1,4 +1,6 @@
+import os
 from flask import Flask, render_template
+import data.db_session as db_session
 
 from flask import jsonify
 from templates.infrastructure.view_modifiers  import response
@@ -67,7 +69,18 @@ def register_blueprints():
     # app.register_blueprint(cms_views.blueprint)
 
 
+def setup_db():
+    db_file = os.path.join(
+        os.path.dirname(__file__),
+        'db',
+        'pypi.sqlite')
+
+    db_session.global_init(db_file)
+
+
 register_blueprints()
+setup_db()
+
 
 # @app.route('/')
 # def hello_world():

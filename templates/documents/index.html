@@ -5,16 +5,51 @@
 
     <h2>Documents</h2>
 
-{#    {% for p in packages %}#}
+    {% for d in documents %}
 
-{#        <div>#}
-{#    <span class="title">#}
-{#        {{ p.name.upper() }}#}
-{#    </span>#}
-{#            <span class="version">#}
-{#        {{ p.version }}#}
-{#    </span>#}
-{#        </div>#}
+        <div>
+            <span class="title">
+                {{ d.doc_name }}
+            </span>
+            <span class="version">
+                {{ d.doc_id }}
+            </span>
+        </div>
 
-{#    {% endfor %}#}
+    {% endfor %}
+
+<div class="container">
+  <ul class="list-group list-group-flush" style="width:100px">
+
+    {% for d in documents %}
+        <li class="list-group-item">{{ d.doc_name }}</li>
+    {% endfor %}
+
+  </ul>
+</div>
+
+    <br>
+    List-group of buttons
+<div class="container">
+    <div class="list-group"  style="width:100px">
+    {% for d in documents %}
+      <button type="button" class="list-group-item list-group-item-action" onclick="alert('{{ d.doc_id }}')">{{ d.doc_name }}</button>
+    {% endfor %}
+
+    </div>
+</div>
+
+        <br>
+    Menu items
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+    <button class="dropdown-item" type="button">Action</button>
+    <button class="dropdown-item" type="button">Another action</button>
+    <button class="dropdown-item" type="button">Something else here</button>
+  </div>
+</div>
 {% endblock %}
