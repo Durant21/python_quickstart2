@@ -59,6 +59,7 @@ def register_blueprints():
     from views import document_views
     from views import home_views
     from views import gis_views
+    from views import account_views
     # from pypi_org.views import package_views
     # from pypi_org.views import cms_views
 
@@ -66,6 +67,7 @@ def register_blueprints():
     app.register_blueprint(document_views.blueprint)
     app.register_blueprint(home_views.blueprint)
     app.register_blueprint(gis_views.blueprint)
+    app.register_blueprint(account_views.blueprint)
     # app.register_blueprint(cms_views.blueprint)
 
 
