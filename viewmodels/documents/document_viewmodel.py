@@ -1,12 +1,15 @@
-from services import user_service
+from services import user_service, document_service
 from viewmodels.shared.viewmodelbase import ViewModelBase
 
 
-class GISViewModel(ViewModelBase):
+class DocumentViewModel(ViewModelBase):
     def __init__(self):
         super().__init__()
         self.user = user_service.find_user_by_id(self.user_id)
         t = 1
+
+        self.doc_packages = document_service.get_all_documents()
+        # return {'documents': doc_packages}
         # self.name = self.request_dict.name
         # self.email = self.request_dict.email.lower().strip()
         # self.password = self.request_dict.password.strip()

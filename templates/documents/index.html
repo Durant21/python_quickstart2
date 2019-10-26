@@ -3,8 +3,7 @@
 
     <h1>Documents</h1>
 
-    <h2>Documents</h2>
-
+Spans
     {% for d in documents %}
 
         <div>
@@ -17,39 +16,53 @@
         </div>
 
     {% endfor %}
-
+  <br>  <br>
+    list group
 <div class="container">
   <ul class="list-group list-group-flush" style="width:100px">
-
+Dropdown
     {% for d in documents %}
         <li class="list-group-item">{{ d.doc_name }}</li>
     {% endfor %}
 
   </ul>
 </div>
-
+  <br>
     <br>
     List-group of buttons
 <div class="container">
     <div class="list-group"  style="width:100px">
-    {% for d in documents %}
+    {% for d in doc_packages %}
       <button type="button" class="list-group-item list-group-item-action" onclick="alert('{{ d.doc_id }}')">{{ d.doc_name }}</button>
     {% endfor %}
 
     </div>
 </div>
+  <br>
+    <button type="button" class="list-group-item list-group-item-action" href="/documents/new_document.html" >New Document</button>
 
+    <div class="form-container">
+        <form action="" method="POST" class="account-form">
+            <input name="action" type="hidden" placeholder=" Your email address" class="form-control" value="new_doc">
+            <button type="submit" class="btn btn-danger">New Document</button>
+            <div style="clear: both;"></div>
+
+            {% if error %}
+                <div class="error-msg">{{ error }}</div>
+            {% endif %}
+        </form>
+    </div>
         <br>
-    Menu items
+    Menu buttons
 
 <div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Dropdown
+    Documents
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-    <button class="dropdown-item" type="button">Action</button>
-    <button class="dropdown-item" type="button">Another action</button>
-    <button class="dropdown-item" type="button">Something else here</button>
+    {% for d in documents %}
+        <button class="dropdown-item" type="button" onclick="alert('{{ d.doc_id }}')">{{ d.doc_name }}</button>
+    {% endfor %}
   </div>
 </div>
 {% endblock %}
