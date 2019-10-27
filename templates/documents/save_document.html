@@ -1,0 +1,28 @@
+{% extends "shared/_layout.html" %}
+{% block title %}About PyPI Demo{% endblock %}
+
+{% block main_content %}
+    <div class="form-container">
+        <form action="/documents/about" method="POST" class="account-form">
+            <h1>Document</h1>
+
+            <h3>Document Saved</h3>
+
+
+            <button type="submit" class="btn btn-danger">About</button>
+            <div style="clear: both;"></div>
+
+            {% if error %}
+                <div class="error-msg">{{ error }}</div>
+            {% endif %}
+        </form>
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="/documents">Documents</a></li>
+        </ul>
+    </div>
+{% endblock %}
+
+{% block additional_css %}
+    <link rel="stylesheet" href="/static/css/document.css">
+{% endblock %}

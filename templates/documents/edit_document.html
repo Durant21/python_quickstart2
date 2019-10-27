@@ -3,11 +3,11 @@
 
 {% block main_content %}
     <div class="form-container">
-        <form action="documents/edit_document" method="POST" class="account-form">
-            <h1>Create a Document</h1>
+        <form action="save_document" method="POST" class="account-form">
+            <h1>Edit Document</h1>
 
             <input name="doc_name" type="text" placeholder=" Document Name" class="form-control" value="{{ doc_name }}">
-            <button type="submit" class="btn btn-danger">Create</button>
+            <button type="submit" class="btn btn-danger">Save</button>
             <div style="clear: both;"></div>
 
             {% if error %}
@@ -18,5 +18,5 @@
 {% endblock %}
 
 {% block additional_css %}
-    <link rel="stylesheet" href="/static/css/account.css">
+    <link rel="stylesheet" href="/static/css/document.css">
 {% endblock %}

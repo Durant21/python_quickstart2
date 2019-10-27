@@ -1,0 +1,117 @@
+{% extends "shared/_layout.html" %}
+{% block main_content %}
+
+    <h1>Documents</h1>
+
+Spans
+    {% for d in documents %}
+
+        <div>
+            <span class="title">
+                {{ d.doc_name }}
+            </span>
+            <span class="version">
+                {{ d.doc_id }}
+            </span>
+        </div>
+
+    {% endfor %}
+  <br>  <br>
+    list group
+<div class="container">
+  <ul class="list-group list-group-flush" style="width:100px">
+Dropdown
+    {% for d in documents %}
+        <li class="list-group-item">{{ d.doc_name }}</li>
+    {% endfor %}
+
+  </ul>
+</div>
+  <br>
+    <br>
+
+    <div class="form-container">
+        <form action="" method="POST" class="account-form">
+            <h1>Documents</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+            <div class="list-group"  style="width:100px">
+            {% for d in doc_packages %}
+              <button type="button" class="list-group-item list-group-item-action" onclick="alert('{{ d.doc_id }}')">{{ d.doc_name }}</button>
+            {% endfor %}
+
+            </div>
+            <button type="submit" class="btn btn-danger">New Document</button>
+            <div style="clear: both;"></div>
+
+            {% if error %}
+                <div class="error-msg">{{ error }}</div>
+            {% endif %}
+        </form>
+    </div>
+
+    List-group of buttons
+<div class="container">
+    <div class="list-group"  style="width:100px">
+    {% for d in doc_packages %}
+      <button type="button" class="list-group-item list-group-item-action" onclick="alert('{{ d.doc_id }}')">{{ d.doc_name }}</button>
+    {% endfor %}
+
+    </div>
+</div>
+  <br>
+    <button type="button" class="list-group-item list-group-item-action" href="/documents/new_document.html" >New Document</button>
+
+    <div class="form-container">
+        <form action="" method="POST" class="account-form">
+            <input name="action" type="hidden" placeholder=" Your email address" class="form-control" value="new_doc">
+            <button type="submit" class="btn btn-danger">New Document</button>
+            <div style="clear: both;"></div>
+
+            {% if error %}
+                <div class="error-msg">{{ error }}</div>
+            {% endif %}
+        </form>
+    </div>
+        <br>
+    Menu buttons
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Documents
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+    {% for d in documents %}
+        <button class="dropdown-item" type="button" onclick="alert('{{ d.doc_id }}')">{{ d.doc_name }}</button>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
+
+{% block additional_css %}
+    <link rel="stylesheet" href="/static/css/document.css">
+{% endblock %}

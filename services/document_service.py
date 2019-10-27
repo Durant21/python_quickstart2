@@ -13,3 +13,17 @@ def get_all_documents(limit=10) -> List[Document]:
     session.close()
 
     return docs
+
+
+def create_document(doc_name: str) -> Optional[Document]:
+    # if find_document_by_title(document):
+    #     return None
+
+    doc = Document()
+    doc.doc_name = doc_name
+
+    session = db_session.create_session()
+    session.add(doc)
+    session.commit()
+
+    return doc

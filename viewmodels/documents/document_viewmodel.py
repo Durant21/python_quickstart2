@@ -6,7 +6,7 @@ class DocumentViewModel(ViewModelBase):
     def __init__(self):
         super().__init__()
         self.user = user_service.find_user_by_id(self.user_id)
-        t = 1
+
 
         self.doc_packages = document_service.get_all_documents()
         # return {'documents': doc_packages}
@@ -14,6 +14,8 @@ class DocumentViewModel(ViewModelBase):
         # self.email = self.request_dict.email.lower().strip()
         # self.password = self.request_dict.password.strip()
         # self.age = self.request_dict.age.strip()
+        self.doc_name = self.request_dict.doc_name.strip()
+        t = 1
 
     # def validate(self):
     #     if not self.name or not self.name.strip():
