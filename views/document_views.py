@@ -24,7 +24,22 @@ def index():
 
 
 
+@blueprint.route('/documents/create_document')
+@response(template_file='/documents/new_document.html')
+def get_new_doc_form():
+    # vm = LoginViewModel()
+    # return vm.to_dict()
+    return {}
 
+@blueprint.route('/documents/create_document', methods=['POST'])
+@response(template_file='/documents/edit_document.html')
+def create_the_doc():
+    vm = DocumentViewModel()
+    # return vm.to_dict()
+
+    doc = document_service.create_document(vm.doc_name)
+
+    return doc.to_dict()
 
 @blueprint.route('/documents', methods=['POST'])
 @response(template_file='/documents/new_document.html')
@@ -35,7 +50,7 @@ def new_doc():
 
 
 @blueprint.route('/documents/new_document', methods=['POST'])
-@response(template_file='/documents/new_document.html')
+@response(template_file='/documents/edit_document.html')
 def create_doc():
     vm = DocumentViewModel()
     # return vm.to_dict()

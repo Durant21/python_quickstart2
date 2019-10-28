@@ -5,41 +5,43 @@
 
 
     <div class="form-container">
-        <form action="" method="POST" class="account-form">
-            <h1>Documents</h1>
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th>Firstname</th>
-                    <th>Lastname</th>
-                    <th>Email</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>John</td>
-                    <td>Doe</td>
-                    <td>john@example.com</td>
-                  </tr>
-                  <tr>
-                    <td>Mary</td>
-                    <td>Moe</td>
-                    <td>mary@example.com</td>
-                  </tr>
-                  <tr>
-                    <td>July</td>
-                    <td>Dooley</td>
-                    <td>july@example.com</td>
-                  </tr>
-                </tbody>
-              </table>
 
-            <div class="list-group"  style="width:100px">
-            {% for d in doc_packages %}
-              <button type="button" class="list-group-item list-group-item-action" onclick="alert('{{ d.doc_id }}')">{{ d.doc_name }}</button>
-            {% endfor %}
+        <h1>Documents</h1>
+        <table class="table">
+            <thead>
+              <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>john@example.com</td>
+              </tr>
+              <tr>
+                <td>Mary</td>
+                <td>Moe</td>
+                <td>mary@example.com</td>
+              </tr>
+              <tr>
+                <td>July</td>
+                <td>Dooley</td>
+                <td>july@example.com</td>
+              </tr>
+            </tbody>
+          </table>
 
-            </div>
+        <div class="list-group"  style="width:100px">
+        {% for d in doc_packages %}
+          <button type="button" class="list-group-item list-group-item-action" onclick="alert('{{ d.doc_id }}')">{{ d.doc_name }}</button>
+        {% endfor %}
+
+        </div>
+<a href="/documents/create_document" class="btn btn-info" role="button">Link Button</a>
+        <form action="/documents/create_document" method="POST" class="account-form">
             <button type="submit" class="btn btn-danger">New Document</button>
             <div style="clear: both;"></div>
 
