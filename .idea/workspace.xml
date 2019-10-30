@@ -4,11 +4,11 @@
     <list default="true" id="7330287d-fed2-4d93-9768-d1cd405995d9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/pypi.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/db/pypi.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/document_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/document_service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/documents/about_document.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/documents/about_document.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/documents/edit_document.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/documents/edit_document.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/documents/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/documents/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/documents/new_document.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/documents/new_document.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/documents/save_document.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/documents/save_document.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/document_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/document_views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -134,6 +134,11 @@
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
               <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@e49161d2" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@41ba472a" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@e49161d2" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               <item name="com.intellij.execution.services.ServiceModel$ServiceNode@363cb830" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
           </expand>
@@ -155,7 +160,7 @@
       <workItem from="1571248171993" duration="5395000" />
       <workItem from="1571264134847" duration="1123000" />
       <workItem from="1571265278916" duration="4648000" />
-      <workItem from="1571774450343" duration="57950000" />
+      <workItem from="1571774450343" duration="62417000" />
     </task>
     <servers />
   </component>
@@ -203,39 +208,24 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/views/document_views.py</url>
-          <line>57</line>
-          <option name="timeStamp" value="26" />
+          <line>91</line>
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/views/document_views.py</url>
-          <line>48</line>
-          <option name="timeStamp" value="27" />
+          <line>92</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/views/document_views.py</url>
-          <line>67</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/views/document_views.py</url>
-          <line>36</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/views/document_views.py</url>
-          <line>41</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/views/document_views.py</url>
-          <line>81</line>
-          <option name="timeStamp" value="31" />
+          <url>file://$PROJECT_DIR$/services/document_service.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/flask_test1$flask_test1.coverage" NAME="flask_test1 Coverage Results" MODIFIED="1571253526901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/python_quickstart2$flask_test1.coverage" NAME="flask_test1 Coverage Results" MODIFIED="1572208650355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_quickstart2$flask_test1.coverage" NAME="flask_test1 Coverage Results" MODIFIED="1572302690395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

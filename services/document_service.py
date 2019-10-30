@@ -14,6 +14,11 @@ def get_all_documents(limit=10) -> List[Document]:
 
     return docs
 
+def get_document_by_name(doc_name: str) -> Optional[Document]:
+        session = db_session.create_session()
+        doc_name = '35'
+        doc = session.query(Document).filter(Document.doc_name == doc_name).first()
+        return doc
 
 def create_document(doc_name: str) -> Optional[Document]:
     # if find_document_by_title(document):
