@@ -2,20 +2,70 @@
 {% block title %}About PyPI Demo{% endblock %}
 
 {% block main_content %}
+        {{ doc_id }}
+            <div class="form-container" style="padding: 5px;">
+                <form action="update_document" method="POST" class="account-form">
+                    <h1>About Document</h1>
 
-    <div class="form-container">
-        <form action="" method="POST" class="account-form">
-            <h1>About Document</h1>
+                <div class="form-group">
+                    <input  type="hidden"  style="width: 80%;" id="doc_id" name="doc_id" value="{{ doc_id }}">
+                    <label for="doc_name">Name:</label>
+                    <input type="text" class="form-control" style="width: 80%;" id="doc_name" name="doc_name" value="{{ doc_name }}">
+                    <br>
+                    <button type="submit" class="btn btn-danger">Save</button>
+                    <div style="clear: both;"></div>
+                </div>
 
-{{ doc_name }}
+                </form>
+            </div>
+
+    <div class="form-container" style="padding: 5px;">
+
+
+            <div class="container-fluid">
+
+                {% for p in mygroups %}
+                    <form action="edit_section" method="POST" class="account-form">
+                                <div class="row">
+
+                                    <div>
+                                        <div class="col" style="background-color:lavender; left: 30px; width:90%">
+                                            <br>
+                                          <label for="usr">section id:</label>
+                                          <input type="text" class="form-control" id="usr" value="{{ p.sec_id }}">
+                                          <label for="comment">Content:</label>
+                                          <textarea class="form-control" rows="2" id="comment" value="{{ p.sec_text }}">{{ p.sec_text }}</textarea>
+                                            <button type="submit" class="btn btn-danger">Edit</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                    </form>
+                {% endfor %}
+
+            </div>
+
 {#            <button type="submit" class="btn btn-danger">About</button>#}
             <div style="clear: both;"></div>
 
-            {% if error %}
-                <div class="error-msg">{{ error }}</div>
-            {% endif %}
-        </form>
+{#            {% if error %}#}
+{#                <div class="error-msg">{{ error }}</div>#}
+{#            {% endif %}#}
 
+
+        <div class="form-container">
+            <form action="add_content" method="POST" class="account-form">
+
+                <input name="doc_id" type="text" placeholder=" Document Name" class="form-control" value="{{ doc_id }}">
+
+                <button type="submit" class="btn btn-danger">Add Content</button>
+                <div style="clear: both;"></div>
+
+{#                    {% if error %}#}
+{#                        <div class="error-msg">{{ error }}</div>#}
+{#                    {% endif %}#}
+            </form>
+        </div>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a class="nav-link" href="/documents">Documents</a></li>
         </ul>

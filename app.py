@@ -57,6 +57,7 @@ def get_latest_packages():
 
 def register_blueprints():
     from views import document_views
+    from views import section_views
     from views import home_views
     from views import gis_views
     from views import account_views
@@ -65,6 +66,7 @@ def register_blueprints():
 
     # app.register_blueprint(package_views.blueprint)
     app.register_blueprint(document_views.blueprint)
+    app.register_blueprint(section_views.blueprint)
     app.register_blueprint(home_views.blueprint)
     app.register_blueprint(gis_views.blueprint)
     app.register_blueprint(account_views.blueprint)
