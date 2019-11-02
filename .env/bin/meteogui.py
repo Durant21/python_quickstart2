@@ -1,4 +1,4 @@
-#!/home/dante/Projects/Azure/quickstart2/python_quickstart2/.env/bin/python3
+#!/home/dante/Projects/Azure/quickstart2/python_quickstart2/.env/bin/python
 # -*- coding: utf-8 -*-
 """
 Created on Tue May 14 12:48:01 2013
