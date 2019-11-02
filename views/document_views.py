@@ -4,6 +4,7 @@ from DAL.Sections import DAL_Sections
 from DAL.Groups import DAL_Groups
 from DAL.Documents import DAL_Documents
 from BLL.Documents import BLL_Documents
+from BLL.Sections import BLL_Sections
 from infrastructure.view_modifiers import response
 import services.document_service as document_service
 from viewmodels.account.index_viewmodel import IndexViewModel
@@ -96,6 +97,7 @@ def add_content():
     # return doc.to_dict()
     return {'doc_id': doc_id,'doc_name': doc_name}
 
+
 @blueprint.route('/documents/save_document', methods=['POST'])
 @response(template_file='/documents/save_document.html')
 def save_doc():
@@ -130,6 +132,8 @@ def save_to_about():
     data = request.form.get('email')
     vm = DocumentViewModel()
     # return vm.to_dict()
+    if not vm.user:
+        return flask.redirect('/account/login')
 
     # TODO  create an edit method for documents
 
@@ -151,7 +155,7 @@ def save_to_about():
         },
     }
 
-    aDict = {'doc_id': vm.doc_id, 'doc_name': vm.doc_name, 'mygroups': mygroups}
+    aDict = {'user_id': vm.user_id , 'doc_id': vm.doc_id, 'doc_name': vm.doc_name, 'mygroups': mygroups}
 
     return aDict
 
@@ -171,10 +175,25 @@ def update_doc():
 @blueprint.route('/documents/edit_section', methods=['POST'])
 @response(template_file='/documents/edit_section.html')
 def edit_section():
-    # doc_id = request.form.get('doc_id')
-    # doc_name = request.form.get('doc_name')
-    #
-    # doc_data = {"doc_id": doc_id,"doc_name": doc_name}
-    # r = BLL_Documents.update_document(doc_id=doc_id,doc_data=doc_data)
-    # # print(r)
-    return {}
+    sec_id = request.form.get('sec_id')
+
+    section_dict = BLL_Sections.single_section(sec_id)
+
+    section = section_dict['msg']
+    section_data = {"sec_id": section.sec_id, "sec_text":section.sec_text}
+
+    return section_data
+
+
+@blueprint.route('/documents/save_section', methods=['POST'])
+@response(template_file='/documents/save_section.html')
+def save_section():
+    sec_id = request.form.get('sec_id')
+    sec_text = request.form.get('sec_text')
+    sec_date_in = request.form.get('sec_date_in')
+    sec_data = {'sec_id': sec_id, 'sec_text': sec_text, 'sec_date_in': sec_date_in}
+
+    msg_dict = BLL_Sections.update_section(sec_id,sec_data)
+    # section_data = {"sec_id": section.sec_id, "sec_text":section.sec_text}
+
+    return msg_dict

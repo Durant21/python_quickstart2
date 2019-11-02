@@ -9,29 +9,29 @@
 {#</form>#}
         <h1>Documents</h1>
 {#    <form action="/documents/about_document" method="POST">#}
-        <div class="list-group"  style="width:100%;height: 40px">
-            <table class="table">
-                <thead>
-                  <tr>
-                    <th>doc_id</th>
-                    <th>doc_name</th>
-                  </tr>
-                </thead>
-            </table>
-        </div>
+{#        <div class="list-group"  style="width:100%;height: 40px">#}
+{#            <table class="table">#}
+{#                <thead>#}
+{#                  <tr>#}
+{#                    <th>doc_id</th>#}
+{#                    <th>doc_name</th>#}
+{#                  </tr>#}
+{#                </thead>#}
+{#            </table>#}
+{#        </div>#}
         <br>
         <div class="list-group"  style="overflow: auto;width:100%;height: 200px">
             <table class="table">
                 <thead>
                   <tr>
-                    <th>doc_id</th>
-                    <th>doc_name</th>
+{#                    <th>doc_id</th>#}
+                    <th>Document Name</th>
                   </tr>
                 </thead>
                 <tbody>
                     {% for d in doc_packages %}
                             <tr>
-                                <td>{{ d.doc_id }}</td>
+{#                                <td>{{ d.doc_id }}</td>#}
                                 <td>{{ d.doc_name }}</td>
                                 <td>
                                     <form action="/documents/about_document" method="POST">

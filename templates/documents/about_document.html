@@ -1,8 +1,8 @@
 {% extends "shared/_layout.html" %}
-{% block title %}About PyPI Demo{% endblock %}
+{% block title %}About CMS Demo{% endblock %}
 
 {% block main_content %}
-        {{ doc_id }}
+
             <div class="form-container" style="padding: 5px;">
                 <form action="update_document" method="POST" class="account-form">
                     <h1>About Document</h1>
@@ -31,8 +31,8 @@
                                     <div>
                                         <div class="col" style="background-color:lavender; left: 30px; width:90%">
                                             <br>
-                                          <label for="usr">section id:</label>
-                                          <input type="text" class="form-control" id="usr" value="{{ p.sec_id }}">
+                                          <label for="sec_id">section id:</label>
+                                          <input type="text" class="form-control" name="sec_id" id="sec_id" value="{{ p.sec_id }}">
                                           <label for="comment">Content:</label>
                                           <textarea class="form-control" rows="2" id="comment" value="{{ p.sec_text }}">{{ p.sec_text }}</textarea>
                                             <button type="submit" class="btn btn-danger">Edit</button>

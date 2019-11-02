@@ -1,0 +1,26 @@
+{% extends "shared/_layout.html" %}
+{% block title %}save{% endblock %}
+
+{% block main_content %}
+    <div class="form-container">
+        <form action="" method="POST" class="account-form">
+            <h1>Section</h1>
+
+            <h3>Section Saved</h3>
+
+            <div style="clear: both;"></div>
+
+            {% if error %}
+                <div class="error-msg">{{ error }}</div>
+            {% endif %}
+        </form>
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="/documents">Documents</a></li>
+        </ul>
+    </div>
+{% endblock %}
+
+{% block additional_css %}
+    <link rel="stylesheet" href="/static/css/document.css">
+{% endblock %}

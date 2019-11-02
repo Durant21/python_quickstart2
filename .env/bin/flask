@@ -1,4 +1,4 @@
-#!/home/dante/Projects/Azure/quickstart2/python_quickstart2/.env/bin/python
+#!/home/dante/Projects/Azure/quickstart2/python_quickstart2/.env/bin/python3
 
 # -*- coding: utf-8 -*-
 import re
