@@ -7,5 +7,5 @@
 import data.users
 
 # noinspection PyUnresolvedReferences
-import data.Documents
+import Domain.Documents
 

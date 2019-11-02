@@ -1,0 +1,27 @@
+{% extends "shared/_layout.html" %}
+{% block title %}edit{% endblock %}
+
+{% block main_content %}
+    <div class="form-container">
+        <form action="/documents/save_section" method="POST" class="account-form">
+            <h1>Edit Section</h1>
+
+            <input name="doc_name" type="text" placeholder=" Document Name" class="form-control" value="{{ doc_name }}">
+            <input name="sec_id" type="text" placeholder=" Section ID" class="form-control" value="{{ sec_id }}">
+            <input name="sec_text" type="text" placeholder=" Section Text" class="form-control" value="{{ sec_text }}">
+            <input name="sec_date_in" type="text" placeholder=" Section Text" class="form-control" value="1/1/2019">
+            <input name="doc_id" type="text" placeholder=" Section Text" class="form-control" value="{{ doc_id }}">
+
+            <button type="submit" class="btn btn-danger">Save</button>
+            <div style="clear: both;"></div>
+
+            {% if error %}
+                <div class="error-msg">{{ error }}</div>
+            {% endif %}
+        </form>
+    </div>
+{% endblock %}
+
+{% block additional_css %}
+    <link rel="stylesheet" href="/static/css/document.css">
+{% endblock %}

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7330287d-fed2-4d93-9768-d1cd405995d9" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/.env/bin/easy_install-3.7" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.env/bin/pip3.7" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.env/lib/python3.7/site-packages/Click-7.0.dist-info/INSTALLER" afterDir="false" />
@@ -995,12 +996,29 @@
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/Flask-1.1.1.dist-info/WHEEL" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/Flask-1.1.1.dist-info/entry_points.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/Flask-1.1.1.dist-info/top_level.txt" beforeDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/.env/bin/download.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env/bin/meteogui.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/ios/FortranFormat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/ios/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/ios/readMeteoBlock.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/meteo_downloader-1.0.egg-info/PKG-INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/meteo_downloader-1.0.egg-info/SOURCES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/meteo_downloader-1.0.egg-info/dependency_links.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/meteo_downloader-1.0.egg-info/installed-files.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/meteo_downloader-1.0.egg-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/ncfile/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/ncfile/meteofile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/parse/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/parse/parse.py" afterDir="false" />
+>>>>>>> 43554784d1cf6763c1365af9a2f589ba2b273bc0
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/Flask_SQLAlchemy-2.4.1.dist-info/INSTALLER" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/Flask_SQLAlchemy-2.4.1.dist-info/LICENSE.rst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/Flask_SQLAlchemy-2.4.1.dist-info/METADATA" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/Flask_SQLAlchemy-2.4.1.dist-info/RECORD" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/Flask_SQLAlchemy-2.4.1.dist-info/WHEEL" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/Flask_SQLAlchemy-2.4.1.dist-info/top_level.txt" beforeDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/Jinja2-2.10.3.dist-info/INSTALLER" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/Jinja2-2.10.3.dist-info/LICENSE.rst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/Jinja2-2.10.3.dist-info/METADATA" beforeDir="false" />
@@ -1043,6 +1061,8 @@
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/click/testing.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/click/types.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/click/utils.py" beforeDir="false" />
+=======
+>>>>>>> 43554784d1cf6763c1365af9a2f589ba2b273bc0
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/dateutil/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/dateutil/_common.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/dateutil/_version.py" beforeDir="false" />
@@ -1062,6 +1082,7 @@
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/dateutil/zoneinfo/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/dateutil/zoneinfo/dateutil-zoneinfo.tar.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/dateutil/zoneinfo/rebuild.py" beforeDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/easy-install.pth" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/easy_install.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/flask/__init__.py" beforeDir="false" />
@@ -1084,10 +1105,13 @@
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/flask/testing.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/flask/views.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/flask/wrappers.py" beforeDir="false" />
+=======
+>>>>>>> 43554784d1cf6763c1365af9a2f589ba2b273bc0
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/flask_sqlalchemy/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/flask_sqlalchemy/_compat.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/flask_sqlalchemy/model.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/flask_sqlalchemy/utils.py" beforeDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/itsdangerous-1.1.0.dist-info/INSTALLER" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/itsdangerous-1.1.0.dist-info/LICENSE.rst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/itsdangerous-1.1.0.dist-info/METADATA" beforeDir="false" />
@@ -1624,6 +1648,8 @@
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/pip/vcs/mercurial.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/pip/vcs/subversion.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/pip/wheel.py" beforeDir="false" />
+=======
+>>>>>>> 43554784d1cf6763c1365af9a2f589ba2b273bc0
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/progressbar/__about__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/progressbar/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/progressbar/bar.py" beforeDir="false" />
@@ -1661,6 +1687,7 @@
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/python_utils/logger.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/python_utils/terminal.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/python_utils/time.py" beforeDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/setuptools-39.0.1.dist-info/DESCRIPTION.rst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/setuptools-39.0.1.dist-info/INSTALLER" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/setuptools-39.0.1.dist-info/METADATA" beforeDir="false" />
@@ -1748,6 +1775,8 @@
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/setuptools/version.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/setuptools/wheel.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/setuptools/windows_support.py" beforeDir="false" />
+=======
+>>>>>>> 43554784d1cf6763c1365af9a2f589ba2b273bc0
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/six-1.12.0.dist-info/INSTALLER" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/six-1.12.0.dist-info/LICENSE" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/six-1.12.0.dist-info/METADATA" beforeDir="false" />
@@ -1755,6 +1784,7 @@
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/six-1.12.0.dist-info/WHEEL" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/six-1.12.0.dist-info/top_level.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/six.py" beforeDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/sqlalchemy/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/sqlalchemy/connectors/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/sqlalchemy/connectors/mxodbc.py" beforeDir="false" />
@@ -2040,6 +2070,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/flask_test1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/flask_test1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/sqlalchemy/cprocessors.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/sqlalchemy/cprocessors.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/sqlalchemy/cresultproxy.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/sqlalchemy/cresultproxy.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/sqlalchemy/cutils.cpython-36m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/sqlalchemy/cutils.cpython-36m-x86_64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+>>>>>>> 43554784d1cf6763c1365af9a2f589ba2b273bc0
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -2089,6 +2126,7 @@
       <list>
         <option value="Flask Main" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -2115,12 +2153,16 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Domain" />
+      <recent name="$PROJECT_DIR$/data" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/templates/documents" />
-      <recent name="$PROJECT_DIR$/static/css" />
       <recent name="$PROJECT_DIR$/viewmodels/documents" />
-      <recent name="$PROJECT_DIR$/viewmodels/gis" />
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/BLL" />
+      <recent name="$PROJECT_DIR$/DAL" />
+      <recent name="$PROJECT_DIR$/Domain" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -2159,17 +2201,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@e49161d2" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@decd70d5" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@e49161d2" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@41ba472a" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@e49161d2" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@363cb830" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@decd70d5" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@2577cab9" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
           </expand>
           <select />
@@ -2190,8 +2227,12 @@
       <workItem from="1571248171993" duration="5395000" />
       <workItem from="1571264134847" duration="1123000" />
       <workItem from="1571265278916" duration="4648000" />
+<<<<<<< HEAD
       <workItem from="1571774450343" duration="62417000" />
       <workItem from="1572466582658" duration="469000" />
+=======
+      <workItem from="1571774450343" duration="114941000" />
+>>>>>>> 43554784d1cf6763c1365af9a2f589ba2b273bc0
     </task>
     <servers />
   </component>
@@ -2217,46 +2258,147 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+        <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/viewmodels/gis/gis_viewmodel.py</url>
           <line>8</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/views/account_views.py</url>
-          <line>30</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/views/account_views.py</url>
-          <line>18</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+        <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/views/account_views.py</url>
           <line>77</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/views/document_views.py</url>
-          <line>91</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/views/document_views.py</url>
-          <line>92</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+        <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/services/document_service.py</url>
           <line>17</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/views/section_views.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/services/section_service.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/services/section_service.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/services/group_service.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/DAL/Groups.py</url>
+          <line>33</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/views/section_views.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/DAL/Groups.py</url>
+          <line>65</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/DAL/Groups.py</url>
+          <line>102</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/services/group_service.py</url>
+          <line>5</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/services/group_service.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/views/document_views.py</url>
+          <line>129</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/views/document_views.py</url>
+          <line>105</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/views/document_views.py</url>
+          <line>77</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/views/document_views.py</url>
+          <line>62</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/views/document_views.py</url>
+          <line>56</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/views/document_views.py</url>
+          <line>43</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/views/document_views.py</url>
+          <line>37</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/views/document_views.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/views/document_views.py</url>
+          <line>80</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/views/document_views.py</url>
+          <line>96</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/views/document_views.py</url>
+          <line>167</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/views/document_views.py</url>
+          <line>155</line>
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/python_quickstart2$flask_test1.coverage" NAME="flask_test1 Coverage Results" MODIFIED="1572466927054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flask_test1$flask_test1.coverage" NAME="flask_test1 Coverage Results" MODIFIED="1571253526901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+<<<<<<< HEAD
+=======
+    <SUITE FILE_PATH="coverage/python_quickstart2$flask_test1.coverage" NAME="flask_test1 Coverage Results" MODIFIED="1572580486198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+>>>>>>> 43554784d1cf6763c1365af9a2f589ba2b273bc0
   </component>
 </project>
