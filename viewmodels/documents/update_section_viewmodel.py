@@ -7,7 +7,8 @@ class UpdateSectionViewModel(CreateSectionViewModel):
         self.sec_id = sec_id
 
     def compute_details(self):
-        sec_id = self.data_dict.get('sec_id')
+        # sec_id = self.data_dict.get('sec_id')
+        sec_id = self.sec_id
         if not self.sec_id:
             self.error.append("No section ID specified.")
         if self.sec_id != sec_id:

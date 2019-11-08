@@ -6,11 +6,46 @@
         <form action="/documents/save_section" method="POST" class="account-form">
             <h1>Edit Section</h1>
 
+            <input name="doc_id" type="text" placeholder=" doc_id" class="form-control" value="{{ doc_id }}">
             <input name="doc_name" type="text" placeholder=" Document Name" class="form-control" value="{{ doc_name }}">
             <input name="sec_id" type="text" placeholder=" Section ID" class="form-control" value="{{ sec_id }}">
             <input name="sec_text" type="text" placeholder=" Section Text" class="form-control" value="{{ sec_text }}">
+
+                    <!-- Include stylesheet -->
+                    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
+                    {# source:  https://quilljs.com/docs/quickstart/#}
+                    <!-- Create the editor container -->
+                    <div id="editor" name="editor"  style="background-color: #eeeeee; height: 100px">
+
+                         {{ sec_text }}
+                    </div>
+
+                    <!-- Include the Quill library -->
+                    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+                    <!-- Initialize Quill editor -->
+                    <script>
+                      var quill = new Quill('#editor', {
+                        theme: 'snow'
+                      });
+                    </script>
+
+
+
+
+  <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
+  <script>tinymce.init({ selector:'textarea' });</script>
+
+
+              <textarea id="aaa" name="aaa">
+
+                    {{ sec_text }}
+
+              </textarea>
+
             <input name="sec_date_in" type="text" placeholder=" Section Text" class="form-control" value="1/1/2019">
-            <input name="doc_id" type="text" placeholder=" Section Text" class="form-control" value="{{ doc_id }}">
+
 
             <button type="submit" class="btn btn-danger">Save</button>
             <div style="clear: both;"></div>

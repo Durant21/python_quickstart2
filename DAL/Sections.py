@@ -5,7 +5,7 @@ import random
 
 from dateutil.parser import parse
 import data.db_session as db_session
-# from data.db_factory import DbSessionFactory
+from data.db_factory import DbSessionFactory
 from Domain.Sections import Section
 from Domain.Groups import Group
 
@@ -15,6 +15,7 @@ class DAL_Sections:
     @classmethod
     def all_sections(cls,limit=None):
         session = db_session.create_session()
+        # session = DbSessionFactory.create_session()
         query = session.query(Section)
 
         if limit:
@@ -29,6 +30,7 @@ class DAL_Sections:
     @classmethod
     def section_by_id(cls, sec_id):
         session = db_session.create_session()
+        # session = DbSessionFactory.create_session()
         section = session.query(Section).filter(Section.sec_id == sec_id).first()
         session.close()
 
@@ -36,7 +38,8 @@ class DAL_Sections:
 
     @classmethod
     def section_by_doc(cls, doc_id):
-        session = db_session.create_session()
+        # session = db_session.create_session()
+        session = DbSessionFactory.create_session()
         section = session.query(Group).filter(Group.doc_id == doc_id).all()
         session.close()
 
@@ -46,6 +49,7 @@ class DAL_Sections:
     def add_section(cls,section):
         try:
             session = db_session.create_session()
+            # session = DbSessionFactory.create_session()
 
             db_section = Section()
             # db_section.sec_id = section.sec_id

@@ -37,9 +37,9 @@ class BLL_Sections:
         section_data.update(sec_text=j_body['sec_text'])
         vm = CreateSectionViewModel(section_data)
         vm.compute_details()
-        if vm.errors:
+        if vm.error:
             # return "400 " + vm.error_msg
-            return {"status": "400", "msg": vm.error_msg}
+            return {"status": "400", "msg": vm.error}
 
         try:
             Section = DAL_Sections.add_section(vm.Section)

@@ -2,6 +2,15 @@
 {% block title %}About CMS Demo{% endblock %}
 
 {% block main_content %}
+  <script src='https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js' referrerpolicy="origin"></script>
+    {#downloaded from https://www.tiny.cloud/get-tiny/self-hosted/#}
+
+  <script>
+  tinymce.init({
+    selector: '#txt_new_content'
+  });
+  </script>
+
 
             <div class="form-container" style="padding: 5px;">
                 <form action="update_document" method="POST" class="account-form">
@@ -15,7 +24,6 @@
                     <button type="submit" class="btn btn-danger">Save</button>
                     <div style="clear: both;"></div>
                 </div>
-
                 </form>
             </div>
 
@@ -28,16 +36,32 @@
                     <form action="edit_section" method="POST" class="account-form">
                                 <div class="row">
 
-                                    <div>
+
                                         <div class="col" style="background-color:lavender; left: 30px; width:90%">
                                             <br>
                                           <label for="sec_id">section id:</label>
                                           <input type="text" class="form-control" name="sec_id" id="sec_id" value="{{ p.sec_id }}">
                                           <label for="comment">Content:</label>
-                                          <textarea class="form-control" rows="2" id="comment" value="{{ p.sec_text }}">{{ p.sec_text }}</textarea>
+{#                                          <textarea class="form-control" rows="2" id="comment" value="{{ p.sec_text }}">{{ p.sec_text }}</textarea>#}
+
+
+                                          <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
+                                          <script>tinymce.init({
+                                                        selector:'textarea',
+                                                        menubar: false,
+                                                        statusbar: false,
+                                                        toolbar: false });</script>
+
+                                                      <textarea id="aaa" name="aaa">
+
+                                                            {{ p.sec_text }}
+
+                                                      </textarea>
+
+
                                             <button type="submit" class="btn btn-danger">Edit</button>
                                         </div>
-                                    </div>
+
 
                                 </div>
                     </form>
@@ -74,4 +98,8 @@
 
 {% block additional_css %}
     <link rel="stylesheet" href="/static/css/document.css">
+
+<!-- Include stylesheet -->
+<link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
 {% endblock %}

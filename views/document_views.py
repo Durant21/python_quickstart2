@@ -190,6 +190,8 @@ def edit_section():
 def save_section():
     sec_id = request.form.get('sec_id')
     sec_text = request.form.get('sec_text')
+    sec_editor = request.form.get('editor')
+    sec_text = request.form.get('aaa')
     sec_date_in = request.form.get('sec_date_in')
     sec_data = {'sec_id': sec_id, 'sec_text': sec_text, 'sec_date_in': sec_date_in}
 
